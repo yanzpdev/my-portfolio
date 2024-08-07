@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="py-3 font-black dark:bg-gradient-to-r dark:from-blue-400 dark:to-purple-400 bg-gradient-to-r from-slate-900 to-slate-600 text-transparent bg-clip-text text-[42px] sm:text-6xl xl:text-7xl pl-[2px] leading-snug">
               Arris Ian Peralta 
             </div>
-            and I am a Full-stack Developer.
+            and I am a Full Stack Developer.
           </h1>
           <div className="flex gap-5 items-center justify-center lg:justify-start py-8 xl:pt-20 xl:pb-10">
             <span className="flex gap-5">

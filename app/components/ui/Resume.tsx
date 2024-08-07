@@ -1,47 +1,14 @@
 'use client';
 import { motion } from 'framer-motion';
-import Image from 'next/image';
 import React, { useEffect, useRef } from 'react'
 import { MdFileDownload } from "react-icons/md";
 import { FaWindowClose } from "react-icons/fa";
-import * as pdfjsLib from 'pdfjs-dist';
-import 'pdfjs-dist/build/pdf.worker.entry';
 
 type ResumeProps = {
   handleButtonPress: () => void;
 }
 
-
 const Resume:React.FC<ResumeProps> = ({handleButtonPress}) => {
-  // const canvasRef = useRef(null);
-  // const pdfUrl = '/assets/res1.pdf';
-  // useEffect(() => {
-  //   const loadingTask = pdfjsLib.getDocument(pdfUrl);
-  //   loadingTask.promise.then((pdf) => {
-  //     // Fetch the first page
-  //     pdf.getPage(1).then((page) => {
-  //       const viewport = page.getViewport({ scale: 1.5 });
-  //       const canvas = canvasRef.current;
-  //       const context = canvas.getContext('2d');
-  //       canvas.height = viewport.height;
-  //       canvas.width = viewport.width;
-
-  //       const renderContext = {
-  //         canvasContext: context,
-  //         viewport: viewport,
-  //       };
-  //       page.render(renderContext);
-  //     });
-  //   });
-  // }, [pdfUrl]);
-  // useEffect(() => {
-  //   document.body.style.overflow = 'hidden';
-     
-  //   return () => {
-  //     document.body.style.overflow = ''; 
-  //   };
-  // }, []);
-
   const downloadPdf = () => {
     const anchor = document.createElement('a');
     anchor.href = '../assets/Resume.pdf';
