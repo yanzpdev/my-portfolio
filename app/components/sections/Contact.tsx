@@ -26,7 +26,7 @@ const Contact = () => {
           <div className="text-center xl:text-start flex flex-col xl:flex-row xl:gap-20 xl:items-end font-semibold">
             <div className="flex flex-col">
               <h1 className="bg-gradient-to-r dark:from-violet-500 dark:to-fuchsia-500 from-sky-500 to-indigo-500 text-transparent text-6xl bg-clip-text leading-tight">
-                Let's work together.
+                Let&apos;s work together.
               </h1>
               <h2 className="text-3xl my-2 xl:text-5xl leading-tight">Hit me up!</h2>
               <h3 className="xl:text-2xl font-light pt-1.5">For inquiries and collaboration contact me through:</h3>
