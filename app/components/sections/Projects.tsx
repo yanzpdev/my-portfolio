@@ -15,7 +15,7 @@ const Projects = () => {
   return (
     <motion.section id='projects'>
       <Element name="projects" className="mx-4 max-w-6xl xl:mx-auto h-full py-20">
-        <h1 className="underline underline-offset-[15px] text-3xl xl:text-5xl font-semibold">Projects</h1>
+        <h1 className="underline underline-offset-[15px] text-3xl xl:text-5xl font-semibold">My Projects</h1>
         {projects.map((project, index) => (
           <Card className="max-w-5xl bg-white border drop-shadow-xl rounded-xl my-10 mx-auto py-10 px-5 xl:px-10 flex flex-col" key={index}>
             <Swiper
@@ -50,11 +50,11 @@ const Projects = () => {
               <>
                 <div className="flex gap-5 items-center justify-between">
                   <h2 className="text-2xl pt-5 xl:pt-0 font-semibold">{project.name}</h2>
-                  <span className={`${project.sourcecode === '' ? 'bg-red-400 line-through decoration-2' : 'bg-green-400'} w-fit py-1 px-3 rounded-xl text-white text-xs font-semibold`}>
+                  {/* <span className={`${project.sourcecode === '' ? 'bg-red-400 line-through decoration-2' : 'bg-green-400'} w-fit py-1 px-3 rounded-xl text-white text-xs font-semibold`}>
                     open-source
-                  </span>
+                  </span> */}
                 </div>
-                <p className="pb-3 mt-2 xl:pb-0">{project.description}</p>
+                <p className="pb-3 text-start mt-2 xl:pb-0">{project.description}</p>
                 <div className={`justify-start flex flex-wrap gap-3 py-3 text-xs`}>
                   {project.technologies.map((tech, index) => (
                     <span

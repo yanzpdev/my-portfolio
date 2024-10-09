@@ -55,7 +55,7 @@ const About = () => {
               />
             </motion.div>
             <motion.p 
-              className="text-sm sm:text-base text-justify xl:text-lg font-medium"
+              className="text-sm sm:text-base text-justify lg:text-start xl:text-lg font-medium"
               initial={{ x: 100, opacity: 0 }}
               whileInView={{ x: 0, opacity: 1 }}
               viewport={{ once: true, amount: 0.5 }}
@@ -181,7 +181,16 @@ const About = () => {
         
         <h2 className="text-center xl:pt-10 py-5 font-bold text-3xl xl:text-4xl">Certifications</h2>
         <div className="overflow-hidden flex items-center justify-center">
-
+          <div className="w-fit ">
+            <h3 className="text-2xl w-full text-start font-semibold mb-3">Creative Web Design</h3>
+            <Image 
+              src={"/assets/cert1.jpg"} 
+              alt={"Creative Web Design Certificate"}
+              width={700}
+              height={700}            
+              className="mx-auto"
+            />
+          </div>
         </div>
       </Element>
     </section>

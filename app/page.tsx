@@ -49,9 +49,7 @@ const Home = () => {
       </div>
     );
   }
-
-  console.log(isLoading);
-
+  
   return (
     <>
       <Header />
@@ -59,7 +57,7 @@ const Home = () => {
         {isToggled &&
           <Resume handleButtonPress={handleButtonPress} />
         }
-        <button 
+        {/* <button 
           className={`h-5 flex flex-col z-10 items-center justify-center fixed top-80 hover:left-0 ${isToggled ? 'left-0' : '-left-20'} duration-300 border-r border-red-500 bg-red-500 px-3 py-8 rounded-r-xl text-white`}
           onClick={handleButtonPress}
         >
@@ -67,7 +65,7 @@ const Home = () => {
             <span>Resume</span>
             <span><HiOutlineDocumentMinus className="text-white" size={24}/></span>
           </div>
-        </button>
+        </button> */}
         <Hero />
         <About />
         <Services />
